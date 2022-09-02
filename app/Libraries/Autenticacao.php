@@ -7,9 +7,6 @@ namespace App\Libraries;
 
 */
 
-
-
-
 class Autenticacao{
 
     private $usuario; 
