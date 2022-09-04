@@ -41,11 +41,11 @@
           <?php endif;   ?>
 
 
-          <?php echo form_open("admin/extras/cadastrar"); ?>
+          <?php echo form_open("admin/medidas/cadastrar"); ?>
 
-            <?php echo $this->include('Admin/Extras/form'); ?>
+            <?php echo $this->include('Admin/medidas/form'); ?>
 
-            <a href="<?php echo site_url("admin/extras"); ?>" class="btn btn-info btn-sm " title="Voltar"> 
+            <a href="<?php echo site_url("admin/medidas"); ?>" class="btn btn-info btn-sm " title="Voltar"> 
               <i class="mdi mdi-arrow-left btn-icon-prepend"></i>    
             </a>
           <?php echo form_close();  ?>

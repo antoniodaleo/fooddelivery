@@ -25,3 +25,1459 @@ in APPPATH\Views\Admin\Medidas\index.php on line 52.
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:28:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:28:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:28:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:28:53 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:28:53 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:28:53 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:51 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 63
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(63): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:53 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 88
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(88): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:53 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 88
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(88): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:53 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 88
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(88): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:53 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 88
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(88): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:53 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 88
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(88): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:32:53 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 88
+in APPPATH\Controllers\Admin\Medidas.php on line 76.
+ 1 APPPATH\Controllers\Admin\Medidas.php(88): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:45 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:45 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:45 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:45 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:45 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:45 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:50 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:50 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:50 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:50 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:51 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:35:51 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:02 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:02 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:02 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:02 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:02 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:02 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:10 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:10 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:10 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:10 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:10 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:10 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:13 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:14 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:14 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:14 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:14 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:14 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:17 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:17 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:17 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:17 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:17 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:17 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:21 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:21 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:21 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:21 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:21 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:21 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 85
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(85): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:35 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:35 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:35 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:36 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:36 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:36:36 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 61
+in APPPATH\Controllers\Admin\Medidas.php on line 73.
+ 1 APPPATH\Controllers\Admin\Medidas.php(61): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:37:56 --> Undefined variable: extra
+in APPPATH\Views\Admin\Extras\form.php on line 5.
+ 1 APPPATH\Views\Admin\Extras\form.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: extra', 'APPPATH\\Views\\Admin\\Extras\\form.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\Extras\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('Admin/Extras/form', null, true)
+ 5 APPPATH\Views\Admin\Medidas\criar.php(46): CodeIgniter\View\View->include('Admin/Extras/form')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\Medidas\\criar.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Admin/medidas/criar', [], true)
+ 9 APPPATH\Controllers\Admin\Medidas.php(68): view('Admin/medidas/criar', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->criar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:47 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:48 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:48 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:48 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:48 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:48 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:51 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 125
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(125): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:51 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 125
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(125): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:51 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 125
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(125): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:51 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 125
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(125): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:51 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 125
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(125): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:51 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 125
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(125): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:57 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:57 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:57 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:57 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:57 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:41:58 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:44:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:44:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:44:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:44:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:44:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:44:52 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:44:56 --> Undefined variable: extra
+in APPPATH\Views\Admin\Medidas\excluir.php on line 44.
+ 1 APPPATH\Views\Admin\Medidas\excluir.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: extra', 'APPPATH\\Views\\Admin\\Medidas\\excluir.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\Medidas\\excluir.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Admin/medidas/excluir', [], true)
+ 5 APPPATH\Controllers\Admin\Medidas.php(200): view('Admin/medidas/excluir', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:17 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:17 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:17 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:18 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:18 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:18 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:53:22 --> Undefined variable: extra
+in APPPATH\Views\Admin\Medidas\excluir.php on line 44.
+ 1 APPPATH\Views\Admin\Medidas\excluir.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: extra', 'APPPATH\\Views\\Admin\\Medidas\\excluir.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\Medidas\\excluir.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Admin/medidas/excluir', [], true)
+ 5 APPPATH\Controllers\Admin\Medidas.php(200): view('Admin/medidas/excluir', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:15 --> Undefined variable: extra
+in APPPATH\Views\Admin\Medidas\excluir.php on line 44.
+ 1 APPPATH\Views\Admin\Medidas\excluir.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: extra', 'APPPATH\\Views\\Admin\\Medidas\\excluir.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\Medidas\\excluir.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Admin/medidas/excluir', [], true)
+ 5 APPPATH\Controllers\Admin\Medidas.php(200): view('Admin/medidas/excluir', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:22 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:22 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:22 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:22 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:22 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:22 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:55:23 --> Undefined variable: extra
+in APPPATH\Views\Admin\Medidas\excluir.php on line 44.
+ 1 APPPATH\Views\Admin\Medidas\excluir.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: extra', 'APPPATH\\Views\\Admin\\Medidas\\excluir.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\Medidas\\excluir.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Admin/medidas/excluir', [], true)
+ 5 APPPATH\Controllers\Admin\Medidas.php(200): view('Admin/medidas/excluir', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:01 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:01 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:01 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:01 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:01 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:02 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:02 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:03 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:03 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:03 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:03 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:18 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:18 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:18 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:18 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:19 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:20 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 101
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(101): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-04 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Medidas.php on line 179
+in APPPATH\Controllers\Admin\Medidas.php on line 113.
+ 1 APPPATH\Controllers\Admin\Medidas.php(179): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

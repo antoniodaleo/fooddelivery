@@ -41,10 +41,10 @@
           <?php endif;   ?>
 
 
-          <?php echo form_open("admin/extras/excluir/$extra->id"); ?>
+          <?php echo form_open("admin/medidas/excluir/$medida->id"); ?>
 
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
-              <strong>Atenção!</strong> Tem certeza da exclusão da extra <?php echo esc($extra->nome) ; ?>?
+              <strong>Atenção!</strong> Tem certeza da exclusão da medida <?php echo esc($medida->nome) ; ?>?
             
             </div>     
 
@@ -53,7 +53,7 @@
               
             </button>
 
-            <a href="<?php echo site_url("admin/extras/show/$extra->id"); ?>" class="btn btn-info btn-sm " title="Voltar"> 
+            <a href="<?php echo site_url("admin/medidas/show/$medida->id"); ?>" class="btn btn-info btn-sm " title="Voltar"> 
                 <i class="mdi mdi-arrow-left btn-icon-prepend"></i>    
             </a>
 
