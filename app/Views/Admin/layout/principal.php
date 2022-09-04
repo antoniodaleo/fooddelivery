@@ -185,6 +185,10 @@
               <i class="mdi mdi-box-shadow menu-icon"></i>
               <span class="menu-title">Extras</span>    
             </a>
+            <a class="nav-link"  href="<?php echo site_url('admin/medidas') ?>"  >
+              <i class="mdi mdi-box-shadow menu-icon"></i>
+              <span class="menu-title">Medidas</span>    
+            </a>
             <a class="nav-link"  href="<?php echo site_url('admin/usuarios') ?>" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-account-settings menu-icon"></i>
               <span class="menu-title">Usuarios</span>    
