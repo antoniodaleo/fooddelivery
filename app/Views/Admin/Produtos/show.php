@@ -13,7 +13,7 @@
 
 <?php echo  $this->section('conteudo'); ?>
   <div class="row">         
-    <div class="col-lg-12 grid-margin stretch-card">
+    <div class="col-lg-4 grid-margin stretch-card">
       <div class="card">
 
           
@@ -24,7 +24,25 @@
           <h4 class="card-title text-white"><?php echo esc($titulo); ?></h4>
         </div>
 
-        <div class="card-body">
+          <div class="card-body">
+
+            <div class="text-center mb-2"> 
+              <?php if($produto->imagem) : ?>
+                <img class="card-img-top w-75" src="<?php  echo site_url("admin/produtos/imagem/$produto->imagem")  ?>" alt="<?php echo esc($produto->nome)?>">
+              <?php else:  ?>
+                <img class="card-img-top w-75" src="<?php  echo site_url('admin/images/produto_sem_imagem.jpg')  ?>" alt="Imagem não disponivel">
+              <?php endif; ?>
+            </div>
+
+            
+            <hr>
+
+            <a href="<?php echo site_url("admin/produtos/editarimagem/$produto->id") ?>" class="btn btn-outline-primary btn-sm ,mt-2 mb-2">
+              <i class="mdi mdi-image btn-icon-prepend"></i> Editar
+            </a>
+
+            <hr>
+          
 
           <p class="card-text">
             <span class="font-weight-bold">Nome: </span>

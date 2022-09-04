@@ -80,7 +80,6 @@ class Produtos extends BaseController
         
     }
 
-
     public function show($id = null){
         $produto = $this->buscaProdutoOu404($id); 
 
@@ -184,7 +183,102 @@ class Produtos extends BaseController
         
     }
 
+    public function editarimagem($id = null){
+        $produto = $this->buscaProdutoOu404($id);
 
+        $data = [
+            'titulo' => "Editando a imagem do  produto $produto->nome", 
+            'produto' => $produto, 
+            
+        ]; 
+
+        return view('Admin/Produtos/editar_imagem', $data); 
+    }
+
+    public function upload($id = null){
+        $produto = $this->buscaProdutoOu404($id);
+
+        $imagem = $this->request->getFile('foto_produto'); 
+
+        if(!$imagem->isValid()){
+            $codigoErro = $imagem->getError(); 
+
+            if($codigoErro == UPLOAD_ERR_NO_FILE){
+                return redirect()->back()->with('atencao','Nenhum arquivo foi selecionado'); 
+            }
+        }
+
+        $tamanhoImagem = $imagem->getSizeByUnit('mb'); 
+
+        if($tamanhoImagem > 2){
+            return redirect()->back()->with('atencao', 'O arquivo selecionado é muito grante. Maximo permitido é: 2 MB'); 
+        }
+
+        $tipoImagem = $imagem->getMimeType(); 
+        $tipoImagemLimpo = explode('/', $tipoImagem); 
+        $tiposPermitidos = [
+            'jpeg' , ' png', 'webp',
+        ];
+
+        if(!in_array($tipoImagemLimpo[1], $tiposPermitidos)){
+            return redirect()->back()->with('atencao', 'O arquivo não tem o formato permitido. Apenas: '. implode(',', $tiposPermitidos)); 
+        }
+
+        list($largura, $altura) = getimagesize($imagem->getPathname()); 
+
+        if($largura < "400" || $altura < "400"){
+            return redirect()->back()->with('atencao', 'A imagem não pode ser menor do que 400 x 400 pixels'); 
+        }
+
+
+        //*********** A partir desse ponto fazemos o store da imagem  */
+        
+        /* Fazendo o store da img e recuperando o caminho da mesma  */
+        $imagemCaminho = $imagem->store('produtos'); 
+
+        $imagemCaminho = WRITEPATH. 'uploads/'. $imagemCaminho; 
+
+        service('image')
+            ->withFile($imagemCaminho)
+            ->fit(400, 400, 'center')
+            ->save($imagemCaminho);
+
+        // Recup a img antiga antiga para exclui-la
+        $imagemAntiga = $produto->imagem; 
+
+        /* Atribuindo a nova imagem */
+        $produto->imagem = $imagem->getName(); 
+
+        // Atualizando a img do produto
+        $this->produtoModel->save($produto);
+
+        /* Definindo o caminho da img antiga */
+        $caminhoImagem =   WRITEPATH. 'uploads/produtos/'.$imagemAntiga; 
+
+        if(is_file($caminhoImagem)){
+
+            unlink($caminhoImagem); 
+        }
+
+        return redirect()->to(site_url("admin/produtos/show/$produto->id"))->with('sucesso', 'Imagem alterada com sucesso'); 
+
+        dd($imagem); 
+    }
+
+    public function imagem(string $imagem = null){
+        if($imagem){
+            $caminhoImagem = WRITEPATH. 'uploads/produtos/'.$imagem; 
+            $infoImagem = new \finfo(FILEINFO_MIME); 
+            $tipoImagem = $infoImagem->file($caminhoImagem); 
+
+            header("Content-Type: $tipoImagem"); 
+            header("Content-Length: ".filesize($caminhoImagem)); 
+
+            readfile($caminhoImagem); 
+            
+            exit; 
+        }
+    }
 
 
 
