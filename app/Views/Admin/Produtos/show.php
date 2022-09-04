@@ -88,6 +88,12 @@
               <a href="<?php echo site_url("admin/produtos/editar/$produto->id"); ?>" class="btn btn-dark btn-sm mr-2" > 
                 <i class="mdi mdi-border-color btn-icon-prepend"></i> 
               </a>
+
+              <a href="<?php echo site_url("admin/produtos/extras/$produto->id"); ?>" class="btn btn-outline-success  btn-sm mr-2" > 
+                <i class="mdi mdi-box btn-icon-prepend"></i> 
+                Extras
+              </a>
+
               <a href="<?php echo site_url("admin/produtos/excluir/$produto->id"); ?>" class="btn btn-danger btn-sm " > 
                 <i class="mdi mdi-trash-can btn-icon-prepend"></i> 
               </a>
