@@ -183,6 +183,54 @@ class Extras extends BaseController
  
     }
 
+    public function excluir($id = null){
+
+        $extra = $this->buscaExtraOu404($id); 
+
+
+        if($extra->deletado_em != null){
+            return redirect()->back()->with('info', "A extra $extra->nome já encontra-se excluido.");
+        }
+
+
+        if($this->request->getMethod() === 'post'){
+            
+            $this->extraModel->delete($id); 
+
+            return redirect()->to(site_url('admin/extras'))->with('sucesso', "Extra $extra->nome excluida com sucesso!");
+        }
+
+        $data = [
+            "titulo" => "Excluindo a extra $extra->nome", 
+            "extra" => $extra, 
+        ]; 
+
+        //dd($usuario); 
+        return view('Admin/Extras/excluir', $data); 
+    }
+
+    public function desfazerExclusao($id = null){
+
+        $extra = $this->buscaExtraOu404($id);
+
+        if($extra->deletado_em == null){
+            return redirect()->back()->with('info', 'Apenas extra excluidos podem ser recuperados');
+        }
+
+        if($this->extraModel->desfazerExclusao($id)){
+
+            return redirect()->back()->with('sucesso', 'Exclusão desfeita com sucesso!');
+
+        }else{
+
+            return redirect()->back()
+                    ->with('errors_model', $this->extraModel->errors())
+                    ->with('atencao', 'Por favor verifique os erros abaixo!')
+                    ->withInput();
+            }
+     
+    }
+
     
 
 

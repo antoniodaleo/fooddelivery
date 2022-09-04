@@ -12,7 +12,7 @@ class ExtraModel extends Model
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'App\Entities\Extra';
-    protected $useSoftDeletes   = false;
+    protected $useSoftDeletes   = true;
     protected $allowedFields    = ['nome','slug','preco', 'descricao', 'ativo'];
 
     // Dates
