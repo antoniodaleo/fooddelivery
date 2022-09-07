@@ -12,6 +12,9 @@ class Produtos extends BaseController
     private $categoriaModel; 
     private $extraModel; 
     private $produtoExtraModel; 
+    private $medidaModel; 
+    private $produtoEspecificacaoModel; 
+
 
     public function __construct(){
 
@@ -19,6 +22,8 @@ class Produtos extends BaseController
         $this->categoriaModel = new \App\Models\CategoriaModel(); 
         $this->extraModel = new \App\Models\ExtraModel(); 
         $this->produtoExtraModel = new \App\Models\ProdutoExtraModel(); 
+        $this->medidaModel = new \App\Models\MedidaModel();
+        $this->produtoEspecificacaoModel = new \App\Models\ProdutoEspecificacaoModel();
 
     }
 
@@ -292,13 +297,96 @@ class Produtos extends BaseController
             'titulo' => "Gerenciar os extras do produto $produto->nome", 
             'produto' => $produto, 
             'extras' => $this->extraModel->where('ativo', true)->findAll(),
-            'produtosExtras' => $this->produtoExtraModel->buscaExtrasDoProduto($produto->id), 
+            'produtoExtras' => $this->produtoExtraModel->buscaExtrasDoProduto($produto->id, 10), 
+            'pager' => $this->produtoExtraModel->pager, 
 
         ]; 
 
         //dd($data['produtosExtras']); 
 
         return view('Admin/Produtos/extras', $data); 
+    }
+
+    public function cadastrarExtras($id= null){
+        if($this->request->getMethod()=== 'post'){
+            
+            $produto = $this->buscaProdutoOu404($id); 
+
+            //dd($this->request->getPost()); 
+            $extraProduto['extra_id'] = $this->request->getPost('extra_id');
+            $extraProduto['produto_id'] = $produto->id; 
+
+            $extraExistente = $this->produtoExtraModel
+                ->where('produto_id', $produto->id)
+                ->where('extra_id', $extraProduto['extra_id'])
+                ->first(); 
+
+            if($extraExistente){
+                return redirect()->back()->with('atencao', 'Esse extra ja existe para esse produto'); 
+            }
+
+            if($this->produtoExtraModel->save($extraProduto)){
+                return redirect()->back()->with('sucesso', 'Extra cadastrado com sucesso'); 
+
+            }else{
+
+                return redirect()->back()
+                 ->with('errors_model', $this->produtoExtraModel->errors())
+                 ->with('atencao',"Por favor verifique os erros abaixo")
+                 ->withInput();
+            }
+
+            //dd($extraProduto); 
+
+        }else{
+
+            /* Não é um post */
+            return redirect()->back(); 
+        }
+    }
+
+    public function excluirExtra($id_principal = null, $id = null){
+
+        if($this->request->getMethod() === 'post'){
+
+            $produto = $this->buscaProdutoOu404($id);
+
+
+            $produtoExtra = $this->produtoExtraModel
+                ->where('id', $id_principal)
+                ->where('produto_id', $produto->id)
+                ->first(); 
+
+            if(!$produtoExtra){
+                return redirect()->back()->with('atencao', 'Não encontramos o registro principal'); 
+            }
+
+            
+            $this->produtoExtraModel->delete($id_principal); 
+            return redirect()->back()->with('sucesso', 'Extra excluido com sucesso!'); 
+
+        }else{
+
+
+            /* Não é post */
+            return redirect()->back(); 
+        }
+
+    }
+
+    public function especificacoes($id = null){
+        $produto = $this->buscaProdutoOu404($id);
+        
+        $data = [
+            'titulo' => "Gerenciar as especificacoes do produto $produto->nome", 
+            'produto' => $produto, 
+            'medidas' => $this->medidaModel->where('ativo', true)->findAll(), 
+            'produtoEspecificacoes' => $this->produtoEspecificacaoModel->buscaEspecificacoesDoProduto($produto->id, 10), 
+            'pager' => $this->produtoEspecificacaoModel->pager, 
+        ]; 
+
+        return view('Admin/Produtos/especificacoes', $data); 
+
     }
 
 

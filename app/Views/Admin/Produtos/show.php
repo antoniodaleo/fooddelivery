@@ -13,7 +13,7 @@
 
 <?php echo  $this->section('conteudo'); ?>
   <div class="row">         
-    <div class="col-lg-4 grid-margin stretch-card">
+    <div class="col-lg-5 grid-margin stretch-card">
       <div class="card">
 
           
@@ -92,6 +92,10 @@
               <a href="<?php echo site_url("admin/produtos/extras/$produto->id"); ?>" class="btn btn-outline-success  btn-sm mr-2" > 
                 <i class="mdi mdi-box btn-icon-prepend"></i> 
                 Extras
+              </a>
+              <a href="<?php echo site_url("admin/produtos/especificacoes/$produto->id"); ?>" class="btn btn-outline-warning  btn-sm mr-2" > 
+                <i class="mdi mdi-box btn-icon-prepend"></i> 
+                Especificações
               </a>
 
               <a href="<?php echo site_url("admin/produtos/excluir/$produto->id"); ?>" class="btn btn-danger btn-sm " > 
