@@ -27,22 +27,27 @@
           <div class="card-body">
 
             <div class="text-center mb-2"> 
-              <?php if($produto->imagem) : ?>
+              <?php if($produto->imagem && $produto->deletado_em == null) : ?>
+                
                 <img class="card-img-top w-75" src="<?php  echo site_url("admin/produtos/imagem/$produto->imagem")  ?>" alt="<?php echo esc($produto->nome)?>">
+              
               <?php else:  ?>
+                
                 <img class="card-img-top w-75" src="<?php  echo site_url('admin/images/produto_sem_imagem.jpg')  ?>" alt="Imagem não disponivel">
-              <?php endif; ?>
+              
+                <?php endif; ?>
             </div>
 
             
-            <hr>
+          <?php if($produto->deletado_em == null): ?>
+          <hr>
 
             <a href="<?php echo site_url("admin/produtos/editarimagem/$produto->id") ?>" class="btn btn-outline-primary btn-sm ,mt-2 mb-2">
-              <i class="mdi mdi-image btn-icon-prepend"></i> Editar
+              <i class="mdi mdi-image btn-icon-prepend"></i> Editar imagem
             </a>
 
-            <hr>
-          
+          <hr>
+          <?php endif;  ?>
 
           <p class="card-text">
             <span class="font-weight-bold">Nome: </span>
@@ -99,7 +104,8 @@
               </a>
 
               <a href="<?php echo site_url("admin/produtos/excluir/$produto->id"); ?>" class="btn btn-danger btn-sm " > 
-                <i class="mdi mdi-trash-can btn-icon-prepend"></i> 
+                <i class="mdi mdi-trash-can btn-icon-prepend"></i>
+                Excluir 
               </a>
               <a href="<?php echo site_url("admin/produtos"); ?>" class="btn btn-info btn-sm " title="Voltar" > 
                 <i class="mdi mdi-arrow-left btn-icon-prepend"></i> 

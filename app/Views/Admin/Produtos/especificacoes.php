@@ -8,6 +8,38 @@
 
 <link rel="stylesheet" href="<?php echo  site_url('admin/vendors/select2/select2.min.css');  ?>">
 
+<style>
+  .select2-container .select2-selection__single{
+    display: block;
+    width: 100%;
+    height: 2.875rem;
+    padding: 0.875rem 1.375rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered{
+
+    line-height: 18px;
+
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow b{
+
+    top: 80%;
+
+  }
+
+</style>
+
+
 <?php echo  $this->endSection(); ?>
 
 
@@ -49,8 +81,8 @@
 
 
               <div class="form-group col-md-4">
-                <label>Escolha a medida do produto (opcional)</label>
-                <select class="form-control js-example-basic-single" name="extra_id">
+                <label>Escolha a medida do produto (opcional)<a href="javascript:void" class="" data-toggle="popover" title="Medida do produto" data-content="Exemplo de uso para pizza:<br> Pizza grande, pizza media, pizza familia">Enteda</a></label>
+                <select class="form-control select2-container js-example-basic-single" name="medida_id">
                   <option value="">Escolha...</option>
                   <?php foreach($medidas as $medida):  ?>
                     <option value="<?php echo $medida->id ?>"> <?php echo esc($medida->nome) ; ?> </option>
@@ -65,7 +97,7 @@
               </div>
 
               <div class="form-group col-md-4">
-                <label>Produto customizavel <a href="javascript:void" class="" data-toggle="popover" title="Medida do produto" data-content="Exemplo de uso para pizza: Pizza grande, pizza media, pizza familia">Enteda</a></label> 
+                <label>Produto customizavel <a href="javascript:void" class="" data-toggle="popover" title="Produto meio e meio" data-content="Exemplo de uso para pizza: <br> Metade calabresa e metade bacon com batata palha">Enteda</a></label> 
                 <select class="form-control " name="customizavel">
                   <option value="">Escolha...</option>
                   <option value="1">Sim</option>
@@ -81,13 +113,13 @@
  
  
             
-            <button type="submit" class="btn btn-primary mr-2">
+            <button type="submit" class="btn btn-primary mt-4 mr-2">
                 <i class="mdi mdi-checkbox-marked-circle  btn-icon-prepend"></i>
-                Inserir medida
+                Inserir especificação
             </button>
             
 
-            <a href="<?php echo site_url("admin/produtos/show/$produto->id"); ?>" class="btn btn-info btn-sm " title="Voltar"> 
+            <a href="<?php echo site_url("admin/produtos/show/$produto->id"); ?>" class="btn btn-info btn-sm mt-4" title="Voltar"> 
                 <i class="mdi mdi-arrow-left btn-icon-prepend"></i>    
             </a>
 
@@ -139,7 +171,11 @@
 
 
                           <td class="text-center">
-                            <button type="submit" class="btn badge badge-danger" >&nbsp;X&nbsp;</button>
+
+                            <a href="<?php echo site_url("admin/produtos/excluirespecificacao/$especificacao->id/$especificacao->produto_id"); ?>" class="btn badge badge-danger " > 
+                              &nbsp;X&nbsp;
+                            </a>
+                           
                 
                           </td>
 
@@ -175,14 +211,17 @@
 
   <script src="<?php echo site_url('admin/vendors/select2/select2.min.js') ?>">  </script>
   <script src="<?php echo site_url('admin/vendors/mask/jquery.mask.min.js') ?>">  </script>
-  <script src="<?php echo site_url('admin/vendors/mask/app.min.js') ?>">  </script>
+  <script src="<?php echo site_url('admin/vendors/mask/app.js') ?>">  </script>
 
   <script>
     // In your Javascript (external .js resource or <script> tag)
     $(document).ready(function() {
 
         $(function () {
-          $('[data-toggle="popover"]').popover()
+          $('[data-toggle="popover"]').popover({
+            placement: 'top', 
+            html: true, 
+          })
         })
 
 
