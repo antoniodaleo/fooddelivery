@@ -197,6 +197,10 @@
               <i class="mdi mdi-box-shadow menu-icon"></i>
               <span class="menu-title">Formas de Pagamento</span>    
             </a>
+            <a class="nav-link"  href="<?php echo site_url('admin/entregadores') ?>" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-motorbike menu-icon"></i>
+              <span class="menu-title">Entregadores</span>    
+            </a>
             <a class="nav-link"  href="<?php echo site_url('admin/usuarios') ?>" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-account-settings menu-icon"></i>
               <span class="menu-title">Usuarios</span>    
