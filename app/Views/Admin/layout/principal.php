@@ -205,6 +205,10 @@
               <i class="mdi mdi-city-variant menu-icon"></i>
               <span class="menu-title">Bairros</span>    
             </a>
+            <a class="nav-link"  href="<?php echo site_url('admin/expedientes') ?>" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-clock-alert-outline menu-icon"></i>
+              <span class="menu-title">Expedientes</span>    
+            </a>
             <a class="nav-link"  href="<?php echo site_url('admin/usuarios') ?>" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-account-settings menu-icon"></i>
               <span class="menu-title">Usuarios</span>    
