@@ -4,13 +4,13 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class CategoriaModel extends Model
+class BairroModel extends Model
 {
-    protected $table            = 'categorias';
-    protected $returnType       = 'App\Entities\Categoria';
+    
+    protected $table            = 'bairros';
+    protected $returnType       = 'App\Entities\Bairro';
     protected $useSoftDeletes   = true;
-    //protected $protectFields    = true;
-    protected $allowedFields    = ['nome', 'ativo', 'slug'];
+    protected $allowedFields    = ['nome','slug','valor_entrega','ativo'];
 
     // Dates
     protected $useTimestamps = true;
@@ -21,12 +21,20 @@ class CategoriaModel extends Model
 
     // Validation
     protected $validationRules = [
-        'nome'     => 'required|min_length[4]|is_unique[categorias.nome]|max_length[120]',
+        'nome'     => 'required|min_length[2]|is_unique[bairros.nome]|max_length[120]',
+        'cidade' => 'required|equals[Fortaleza]', 
+        'valor_entrega'     => 'required',
     ];
     protected $validationMessages = [
         'nome' => [
             'required' => 'O campo nome é obrigatorio',
-            'is_unique' => 'Essa categoria já existe',
+            'is_unique' => 'Esse Bairro já existe',
+        ],
+        'valor_entrega' => [
+            'required' => 'O campo Valor de entrega é obrigatorio',
+        ],
+        'cidade' => [
+            'equals' => 'Por favor cadastra apenas Bairro de Fortaleza - CE',
         ],
 
     ];
@@ -49,7 +57,6 @@ class CategoriaModel extends Model
         return $data; 
     }
 
-   
     public function procurar($term){
         if($term === null){
 
@@ -74,6 +81,5 @@ class CategoriaModel extends Model
     }
 
 
+    
 }
-
-

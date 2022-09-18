@@ -1,0 +1,940 @@
+ERROR - 2022-09-18 05:24:26 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\xampp\htdocs\food\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\food\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'food', 3306, '', 0)
+#1 C:\xampp\htdocs\food\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\food\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\food\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\food\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\food\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\food\app\Models\UsuarioModel.php(114): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\food\app\Libraries\Autenticacao.php(23): App\Models\UsuarioModel->buscaUsuarioPorEmail('antoniodaleo@ou...')
+#8 C:\xampp\htdocs\food\app\Controllers\Login.php(32): App\Libraries\Autenticacao->login('antoniodaleo@ou...', '123456')
+#9 C:\xampp\htdocs\food\system\CodeIgniter.php(904): App\Controllers\Login->criar()
+#10 C:\xampp\htdocs\food\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#11 C:\xampp\htdocs\food\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\food\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\food\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in C:\xampp\htdocs\food\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\food\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\food\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\food\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\food\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\food\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\food\app\Models\UsuarioModel.php(114): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\food\app\Libraries\Autenticacao.php(23): App\Models\UsuarioModel->buscaUsuarioPorEmail('antoniodaleo@ou...')
+#7 C:\xampp\htdocs\food\app\Controllers\Login.php(32): App\Libraries\Autenticacao->login('antoniodaleo@ou...', '123456')
+#8 C:\xampp\htdocs\food\system\CodeIgniter.php(904): App\Controllers\Login->criar()
+#9 C:\xampp\htdocs\food\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\food\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\food\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\food\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-09-18 05:24:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `email` = :email:
+AND `usuarios`.`deletado_em` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UsuarioModel.php(114): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Libraries\Autenticacao.php(23): App\Models\UsuarioModel->buscaUsuarioPorEmail('antoniodaleo@outlook.com')
+ 7 APPPATH\Controllers\Login.php(32): App\Libraries\Autenticacao->login('antoniodaleo@outlook.com', '123456')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Login->criar()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:20 --> Argument 1 passed to App\Controllers\Admin\Entregadores::buscaEntregadorOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Entregadores.php on line 116
+in APPPATH\Controllers\Admin\Entregadores.php on line 104.
+ 1 APPPATH\Controllers\Admin\Entregadores.php(116): App\Controllers\Admin\Entregadores->buscaEntregadorOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Entregadores->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Entregadores))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:20 --> Argument 1 passed to App\Controllers\Admin\Entregadores::buscaEntregadorOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Entregadores.php on line 116
+in APPPATH\Controllers\Admin\Entregadores.php on line 104.
+ 1 APPPATH\Controllers\Admin\Entregadores.php(116): App\Controllers\Admin\Entregadores->buscaEntregadorOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Entregadores->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Entregadores))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:20 --> Argument 1 passed to App\Controllers\Admin\Entregadores::buscaEntregadorOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Entregadores.php on line 116
+in APPPATH\Controllers\Admin\Entregadores.php on line 104.
+ 1 APPPATH\Controllers\Admin\Entregadores.php(116): App\Controllers\Admin\Entregadores->buscaEntregadorOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Entregadores->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Entregadores))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:20 --> Argument 1 passed to App\Controllers\Admin\Entregadores::buscaEntregadorOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Entregadores.php on line 116
+in APPPATH\Controllers\Admin\Entregadores.php on line 104.
+ 1 APPPATH\Controllers\Admin\Entregadores.php(116): App\Controllers\Admin\Entregadores->buscaEntregadorOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Entregadores->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Entregadores))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:20 --> Argument 1 passed to App\Controllers\Admin\Entregadores::buscaEntregadorOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Entregadores.php on line 116
+in APPPATH\Controllers\Admin\Entregadores.php on line 104.
+ 1 APPPATH\Controllers\Admin\Entregadores.php(116): App\Controllers\Admin\Entregadores->buscaEntregadorOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Entregadores->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Entregadores))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:20 --> Argument 1 passed to App\Controllers\Admin\Entregadores::buscaEntregadorOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Entregadores.php on line 116
+in APPPATH\Controllers\Admin\Entregadores.php on line 104.
+ 1 APPPATH\Controllers\Admin\Entregadores.php(116): App\Controllers\Admin\Entregadores->buscaEntregadorOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Entregadores->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Entregadores))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:29 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 82.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:29 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 82.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:29 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 82.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:29 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 82.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:30 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 82.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 05:25:30 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 82.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:10:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:10:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:10:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:10:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:10:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:10:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:10:50 --> Undefined variable: extra
+in APPPATH\Views\Admin\Bairros\editar.php on line 44.
+ 1 APPPATH\Views\Admin\Bairros\editar.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: extra', 'APPPATH\\Views\\Admin\\Bairros\\editar.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\Bairros\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Admin/Bairros/editar', [], true)
+ 5 APPPATH\Controllers\Admin\Bairros.php(91): view('Admin/Bairros/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:11:13 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:11:13 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:11:13 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:11:13 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:11:13 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:11:14 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:12:56 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:12:56 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:12:56 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:12:56 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:12:56 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:12:57 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:13:09 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:13:09 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:13:09 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:13:09 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:13:09 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:13:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:20:50 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:20:50 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:20:50 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:20:50 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:20:51 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:20:51 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:20:54 --> Undefined property: App\Controllers\Admin\Bairros::$reques
+in APPPATH\Controllers\Admin\Bairros.php on line 97.
+ 1 APPPATH\Controllers\Admin\Bairros.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Admin\\Bairros::$reques', 'APPPATH\\Controllers\\Admin\\Bairros.php', 97, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->atualizar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:11 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:11 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:37 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:37 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:37 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:37 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:37 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:37 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:41 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:41 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:41 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:41 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:41 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:42 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:48 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:21:49 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 127.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:24:37 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 133.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:24:37 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 133.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:24:38 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 133.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:24:38 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 133.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:24:38 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 133.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:24:39 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 133.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:26:22 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:26:22 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:26:22 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:26:22 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:26:22 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:26:22 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 69
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(69): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:38:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:38:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:38:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:38:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:38:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:38:10 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 83
+in APPPATH\Controllers\Admin\Bairros.php on line 130.
+ 1 APPPATH\Controllers\Admin\Bairros.php(83): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:40:42 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 84
+in APPPATH\Controllers\Admin\Bairros.php on line 145.
+ 1 APPPATH\Controllers\Admin\Bairros.php(84): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:40:42 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 84
+in APPPATH\Controllers\Admin\Bairros.php on line 145.
+ 1 APPPATH\Controllers\Admin\Bairros.php(84): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:40:42 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 84
+in APPPATH\Controllers\Admin\Bairros.php on line 145.
+ 1 APPPATH\Controllers\Admin\Bairros.php(84): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:40:42 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 84
+in APPPATH\Controllers\Admin\Bairros.php on line 145.
+ 1 APPPATH\Controllers\Admin\Bairros.php(84): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:40:42 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 84
+in APPPATH\Controllers\Admin\Bairros.php on line 145.
+ 1 APPPATH\Controllers\Admin\Bairros.php(84): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 07:40:43 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 84
+in APPPATH\Controllers\Admin\Bairros.php on line 145.
+ 1 APPPATH\Controllers\Admin\Bairros.php(84): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 11:05:01 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 225.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 11:05:01 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 225.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 11:05:01 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 225.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 11:05:01 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 225.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 11:05:01 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 225.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 11:05:01 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 225.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:43 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:43 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:43 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:43 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:43 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:43 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 116
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(116): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:44 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 248
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(248): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->excluir('images', 'logo.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:44 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 248
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(248): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->excluir('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:44 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 248
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(248): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->excluir('images', 'logo-mini.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:44 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 248
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(248): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->excluir('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:45 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 248
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(248): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->excluir('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-18 14:53:45 --> Argument 1 passed to App\Controllers\Admin\Bairros::buscaBairroOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\food\app\Controllers\Admin\Bairros.php on line 248
+in APPPATH\Controllers\Admin\Bairros.php on line 235.
+ 1 APPPATH\Controllers\Admin\Bairros.php(248): App\Controllers\Admin\Bairros->buscaBairroOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Bairros->excluir('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Bairros))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

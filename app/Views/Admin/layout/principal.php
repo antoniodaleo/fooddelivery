@@ -201,6 +201,10 @@
               <i class="mdi mdi-motorbike menu-icon"></i>
               <span class="menu-title">Entregadores</span>    
             </a>
+            <a class="nav-link"  href="<?php echo site_url('admin/bairros') ?>" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-city-variant menu-icon"></i>
+              <span class="menu-title">Bairros</span>    
+            </a>
             <a class="nav-link"  href="<?php echo site_url('admin/usuarios') ?>" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-account-settings menu-icon"></i>
               <span class="menu-title">Usuarios</span>    
