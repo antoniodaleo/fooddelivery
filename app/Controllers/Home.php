@@ -6,6 +6,16 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+
+        $data = [
+            'titulo' =>'Seja muito bem vindo(a)',
+        ]; 
+
+
+
+
+
+
+        return view('Home/index', $data);
     }
 }

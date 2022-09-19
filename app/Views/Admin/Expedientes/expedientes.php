@@ -31,7 +31,7 @@
             
 
 
-            <?php echo form_open("admin/expediente", ['class' =>'form-row']); ?>
+            <?php echo form_open("admin/expedientes/expedientes", ['class' =>'form-row']); ?>
 
             <div class="table-responsive">
               <table class="table table-hover">
@@ -48,19 +48,19 @@
                   <?php foreach($expedientes as $dia): ?>
                   <tr>
                    
-                    <td class="form-group col-md-3">
-                       <input type="type" name="dia_descricao[]" class="form-control" value="<?php echo esc($dia->dia_descricao) ?>" readonly="">
+                    <td class="form-group">
+                       <input type="type" name="dia_descricao[]" class="border-0 " value="<?php echo esc($dia->dia_descricao) ?>" readonly="">
                     </td>
-                    <td class="form-group col-md-3">
+                    <td class="form-group">
                        <input type="time" name="abertura[]" class="form-control" value="<?php echo esc($dia->abertura) ?>" required="">
                     </td>
-                    <td class="form-group col-md-3">
+                    <td class="form-group">
                        <input type="time" name="fechamento[]" class="form-control" value="<?php echo esc($dia->fechamento) ?>" required="">
                     </td>
-                    <td class="form-group col-md-3">
+                    <td class="form-group">
                       <select name="situacao[]" class="form-control" required="">
-                        <option value="1">Aberto</option>
-                        <option value="0">Fechado</option>
+                        <option value="1" <?php echo ($dia->situacao == true ? 'selected' : ''); ?>> Aberto</option>
+                        <option value="0" <?php echo ($dia->situacao == false ? 'selected' : ''); ?>> Fechado</option>
                       </select>
                     </td>
                    
