@@ -24,7 +24,7 @@ class ExtraModel extends Model
 
     // Validation
     protected $validationRules = [
-        'nome'     => 'required|min_length[4]|is_unique[extras.nome]|max_length[120]',
+        'nome'     => 'required|min_length[4]|is_unique[extras.nome,id,{id}]|max_length[120]',
     ];
     protected $validationMessages = [
         'nome' => [

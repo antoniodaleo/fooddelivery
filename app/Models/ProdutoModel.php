@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Entities\Categoria;
 use CodeIgniter\Model;
 
 class ProdutoModel extends Model
@@ -33,7 +34,7 @@ class ProdutoModel extends Model
 
         // Validation
         protected $validationRules = [
-            'nome'     => 'required|min_length[4]|is_unique[produtos.nome]|max_length[120]',
+            'nome'     => 'required|min_length[4]|is_unique[produtos.nome,id,{id}]|max_length[120]',
             'categoria_id' => 'required|integer', 
             'ingredientes'     => 'required|min_length[10]|is_unique[produtos.ingredientes]|max_length[1000]',
         ];
@@ -85,6 +86,31 @@ class ProdutoModel extends Model
                         ->where('id', $id)
                         ->set('deletado_em', null)
                         ->update(); 
+        }
+
+        public function buscaProdutosWebHome(){
+            
+            return $this->select([
+                'produtos.id', 
+                'produtos.nome', 
+                'produtos.ingredientes', 
+                'produtos.slug', 
+                'produtos.imagem', 
+                'categorias.id AS categoria_id',
+                'categorias.nome AS categoria', 
+                'categorias.slug AS categoria_slug',
+                
+            ])
+
+                ->selectMin('produtos_especificacoes.preco')
+                ->join('categorias', 'categorias.id = produtos.categoria_id')
+                ->join('produtos_especificacoes', 'produtos_especificacoes.produto_id = produtos.id')
+                ->where('produtos.ativo', true)
+                ->groupBy('produtos.nome')
+                ->orderBy('categorias.nome', 'ASC')
+                ->findAll(); 
+                
+
         }
     
 }
