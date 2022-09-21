@@ -7,10 +7,12 @@ use App\Controllers\BaseController;
 class Produto extends BaseController{
 
     private $produtoModel; 
+    private $produtoEspecificacaoModel; 
 
 
     public function __construct(){
         $this->produtoModel= new \App\Models\ProdutoModel(); 
+        $this->produtoEspecificacaoModel= new \App\Models\ProdutoEspecificacaoModel(); 
     }
 
     public function detalhes(string $produto_slug = null){
@@ -20,17 +22,19 @@ class Produto extends BaseController{
             return redirect()->to(site_url('/')); 
         }   
 
+       // dd($produto);
+
 
         $data = [
             'titulo' => "Detalhando o produto $produto->nome", 
             'produto' => $produto,
+            'especifacacoes' => $this->produtoEspecificacaoModel->buscaEspecificacoesDoProdutoDetalhes($produto->id),
 
         ];
-
+       
 
         return view('Produto/detalhes', $data); 
-        //dd($produto);
-
+      
     }
 
 
