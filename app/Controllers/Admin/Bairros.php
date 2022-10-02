@@ -97,8 +97,8 @@ class Bairros extends BaseController
             }else{ 
 
                 return redirect()->back()->with('errors_model', $this->bairroModel->errors())
-                ->with('atencao',"Por favor verifique os erros abaixo")
-                ->withInput();
+                    ->with('atencao',"Por favor verifique os erros abaixo")
+                    ->withInput();
             }
 
 

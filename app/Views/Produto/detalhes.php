@@ -18,7 +18,7 @@
     <!-- product -->
     <div class="product-content product-wrap clearfix product-deatil">
         <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="col-md-5 col-sm-12 col-xs-12">
                 <div class="product-image">
                     <img src=<?php  echo site_url("produto/imagem/$produto->imagem") ?> alt="<?php echo esc($produto->nome); ?>" />
 
@@ -26,18 +26,38 @@
             </div>
 
             <?php echo form_open("carrinho/adicionar"); ?>
-            <div class="col-md-7 col-md-offset-1 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+
+                
+                <?php if(session()->has('errors_model')):  ?>
+                    
+                    <ul style="margin-left: -1.6em !important; list-style: decimal">
+
+                        <?php foreach(session('errors_model') as $error):  ?>
+
+                            <li class="text-danger"><?php echo $error; ?></li>
+
+                        <?php endforeach;  ?>
+
+                    </ul>
+
+                <?php endif;   ?>
+
+
                 <h2 class="name">
                     <?php echo esc($produto->nome); ?>
                 </h2>
                 <hr />
                 <h3 class="price-container">
 
+                    <p class="small">Escolha o valor</p>
+
+                    <!-- Sarebbero le dimensioni del prodotto -->
                     <?php foreach($especifacacoes as $especificacao): ?>
 
                     <div class="radio">
-                        <label>
-                            <input type="radio" class="especificacao" data-especificacao="<?php echo $especificacao->especificacao_id; ?>" name="produto[preco]" value="<?php echo $especificacao->preco ?>">
+                        <label style="font-size: 16px;">
+                            <input type="radio" style="margin-top: 2px;" class="especificacao" data-especificacao="<?php echo $especificacao->especificacao_id; ?>" name="produto[preco]" value="<?php echo $especificacao->preco ?>">
                             <?php echo esc($especificacao->nome);  ?>
                             <?php echo esc(number_format($especificacao->preco , 2)); ?>
 
@@ -45,12 +65,52 @@
                     </div>
 
                     <?php endforeach; ?>
+
+
+                    <!-- Sarebbero le aggiunte che puoi avere al prodotto -->
+                    <!-- Se l'extra esiste mi mostri -->
+                    <?php if(isset($extras)) : ?>
+                        <hr>
+                        <p class="small">Extras do produto</p>
+
+                        <div class="radio">
+                            <label style="font-size: 16px;">
+                                <input type="radio" style="margin-top: 2px;" class="extra" name="extra" checked="">Sem Extra
+                            </label>
+                        </div>
+
+
+                        <?php foreach($extras as $extra): ?>
+
+                            <div class="radio">
+                                <label style="font-size: 16px;">
+                                    <input type="radio"  style="margin-top: 2px;" class="extra" 
+                                        data-extra="<?php echo $extra->id; ?>" 
+                                        name="extra" 
+                                        value="<?php echo $extra->preco ?>">
+
+                                    <?php echo esc($extra->nome);  ?>
+                                    <?php echo esc(number_format($extra->preco , 2)); ?>
+
+                                </label>
+                            </div>
+
+                        <?php endforeach; ?>
+                    <?php endif;  ?>
+                
                 </h3>
+
+                <div class="row" style="margin-top: 4rem">
+                    <div class="col-md-4">
+                        <label>Quantidade</label>
+                        <input type="number" class="form-control" name="produto[quantidade]" value="1" min="1" max="20" step="1" required="">
+                    </div>
+                </div>
                
                 <hr />
                 <div class="description description-tabs">
                   
-                    <div id="myTabContent" class="tab-content">
+                    <div id="myTabContent" class="tab-content"  style="font-size: 16px;">
                         <div class="tab-pane fade active in" id="more-information">
                             <br />
                             <strong>È uma delícia</strong>
@@ -66,19 +126,35 @@
 
                 <div>
                     <!-- Campos hidden que usaremos no controller -->
-                    <input type="text" name="produto[slug]" placeholder="produto[slug]" value="<?php echo $produto->slug;  ?>">
-                    <input type="text" id="especificacao_id" placeholder="produto[especificacao_id]" name="produto[especificacao_id]" > 
-                    <input type="text" id="extra_id" placeholder="produto[extra_id]" name="produto[extra_id]" > 
+                    <input type="hidden" name="produto[slug]" placeholder="produto[slug]" value="<?php echo $produto->slug;  ?>">
+                    <input type="hidden" id="especificacao_id" placeholder="produto[especificacao_id]" name="produto[especificacao_id]" > 
+                    <input type="hidden" id="extra_id" placeholder="produto[extra_id]" name="produto[extra_id]" > 
 
                 </div>
 
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        <input type="submit" class="btn btn-success btn-lg" value="Adicionar ao carrinho">
 
-                        <a href="<?php echo site_url("/") ?>" class="btn btn-info btn-lg ">Mais delicias</a>
+
+                    <div class="col-sm-4 ">
+                        <input id="btn-adiciona" type="submit" class="btn btn-success btn-block" value="Adicionar">
                     </div>
+
+                    <?php foreach($especifacacoes as $especificacao): ?>
+                        <?php if($especificacao->customizavel): ?>
+
+                            <div class="col-sm-4 ">
+                                <a href="<?php echo site_url("produto/customizar/$produto->slug") ?>" class="btn btn-info btn-block ">Customizar</a>
+                            </div>
+                            <?php break; ?>
+
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+
+                    <div class="col-sm-4 ">
+                        <a href="<?php echo site_url("/") ?>" class="btn btn-info btn-block">Mais delicias</a>
+                    </div>
+
                    
                 </div>
             </div>
@@ -103,511 +179,37 @@
 
 <?php echo $this->section('scripts');  ?>
 
+<script>
+
+    $(document).ready(function(){
+
+        var especificacao_id; 
+
+        if(!especificacao_id){
+            
+            $("#btn-adiciona").prop("disabled",true); 
+            $("#btn-adiciona").prop("value","Selecione um valor"); 
+
+        }
+
+        $(".especificacao").on('click', function(){
+            especificacao_id = $(this).attr('data-especificacao'); 
+            $("#especificacao_id").val(especificacao_id);
+            
+            $("#btn-adiciona").prop("disabled",false); 
+            $("#btn-adiciona").prop("value","Adicionar"); 
+        });
+
+        $(".extra").on('click', function(){
+            var extra_id = $(this).attr('data-extra'); 
+            $("#extra_id").val(extra_id);
+            
+        });
+    })
+
+</script>                 
+
 
 <?php echo $this->endSection();  ?>
 
 
-<!-- Begin Sections-->
-
-        <!--    About Us    -->
-        <div class="container section" id="about_us">
-            <div class="col-sm-12 d-flex flex-xs-column">
-                <div class="col-sm-6 d-flex align-items-center padd_lr0" data-aos="fade-up">
-                    <div class="content">
-                        <h1 class="section-title title_sty1">about us</h1>
-                        <p class="short">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 img text-center padd_lr0" data-aos="fade-down">
-                    <div class="border_on">
-                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/about-us.jpg" alt="sample" class="about_img" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--    Menus   -->
-        <div class="container section" id="menu" data-aos="fade-up">
-            <div class="title-block">
-                <h1 class="section-title">Our Menus</h1>
-            </div>
-
-            <!--    Menus filter    -->
-            <div class="menu_filter text-center">
-                <ul class="list-unstyled list-inline d-inline-block">
-                    <li class="item active">
-                        <a href="javascript:;" class="filter-button" data-filter="burger">Burger</a>
-                    </li>
-                    <li class="item">
-                        <a href="javascript:;" class="filter-button" data-filter="pizza">Pizza</a>
-                    </li>
-                    <li class="item">
-                        <a href="javascript:;" class="filter-button" data-filter="salad">Salad</a>
-                    </li>
-                    <li class="item">
-                        <a href="javascript:;" class="filter-button" data-filter="frices">Frices</a>
-                    </li>
-                    <li class="item">
-                        <a href="javascript:;" class="filter-button" data-filter="drinks">Drinks</a>
-                    </li>
-                </ul>
-            </div> 
-
-            <!--    Menus items     -->
-            <div id="menu_items">
-
-                <div class="filtr-item image filter burger active">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-1.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-1.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Margherita</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$10.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-2.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-2.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Greece</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$7.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-3.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-3.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Pepperoni</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$8.50</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-4.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-4.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Chicken lovers</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$8.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-5.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-5.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Italiano</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$11.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-6.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-6.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Pepper beef</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$9.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-7.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-7.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Hawai</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$11.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-8.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-8.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Caesar</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$9.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="filtr-item image filter pizza">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-6.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-6.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Pepper beef</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$9.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-8.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-8.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Caesar</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$9.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-7.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-7.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Hawai</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$11.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-5.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-5.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Italiano</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$11.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="filtr-item image filter salad">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-3.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-3.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Pepperoni</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$8.50</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-2.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-2.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Greece</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$7.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-4.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-4.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Chicken lovers</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$8.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-1.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-1.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Margherita</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$10.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="filtr-item image filter frices">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-8.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-8.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Caesar</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$9.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-7.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-7.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Hawai</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$11.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-6.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-6.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Pepper beef</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$9.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-2.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-2.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Greece</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$7.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="filtr-item image filter drinks">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-1.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-1.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Margherita</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$10.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-5.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-5.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Italiano</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$11.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-3.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-3.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Pepperoni</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$8.50</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="<?php echo site_url('web/'); ?>src/assets/img/photos/food-4.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="<?php echo site_url('web/'); ?>src/assets/img/photos/food-4.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Chicken lovers</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni</div>
-                                        <span class="filter_item_price">$8.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <!-- BEGIN pagination -->
-                    <ul class="pagination">
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                    </ul>
-                    <!-- END pagination -->
-                </div>
-
-            </div>
-        </div>
-
-        <!--    Reservation    -->
-
-        <div class="fixed_layer section" id="reservation">
-            <div class="fixed_layer_padd container">
-                <div class="row">
-                    <div class="col-md-offset-6 col-md-6" data-aos="fade-down">
-                        <div class="reserv_box">
-                            <h1 class="section-title title_sty1">online reservation</h1>
-                            <p class="short">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                            <form id="reserv_form" method="post">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group form_pos">
-                                            <input type="text" name="name" required="" placeholder="Your name" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your name'" />
-                                            <span class="form_icon"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group form_pos">
-                                            <input type="email" name="email" required="" placeholder="Your email" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email'" />
-                                            <span class="form_icon"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="form-group form_pos">
-                                            <input type="text" name="phone" required="" placeholder="Phone" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" />
-                                            <span class="form_icon"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="form-group form_pos">
-                                            <input type="text" name="date" required="" placeholder="Date" class="form-control" id="reserv_date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date'" />
-                                            <span class="form_icon"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="form-group form_pos">
-                                            <input type="text" name="time" required="" placeholder="Time" class="form-control" id="reserv_time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Time'" />
-                                            <span class="form_icon"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea rows="3" name="message" placeholder="Message" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'"></textarea>
-                                </div>
-                                <input type="submit" name="send" value="book now" class="btn btn-block" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-      
-
-        <!-- End Sections -->

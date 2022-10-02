@@ -260,6 +260,29 @@
         </header>
         <!-- End header -->
 
+        <div class="container" style="margin-top:2em">
+            <?php if(session()->has('sucesso')): ?>
+                <div class="alert alert-danger" role="alert"><?php echo session('sucesso');  ?></div>
+            <?php endif; ?>
+
+            <?php if(session()->has('info')): ?>
+                <div class="alert alert-danger" role="alert"><?php echo session('info');  ?></div>
+            <?php endif; ?>
+
+            <?php if(session()->has('atencao')): ?>
+                <div class="alert alert-danger" role="alert"><?php echo session('atencao');  ?></div>
+            <?php endif; ?>
+            <?php if(session()->has('fraude')): ?>
+                <div class="alert alert-warning" role="alert"><?php echo session('fraude');  ?></div>
+            <?php endif; ?>
+
+            <?php if(session()->has('error')): ?>
+                <div class="alert alert-danger" role="alert"> <?php echo session('error');  ?></div>
+            <?php endif; ?>
+        </div>
+    
+
+
         <?php $this->renderSection('conteudo');  ?>
 
         <!--  Begin Footer  -->
